@@ -6,6 +6,27 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;700&display=swap');
 
+:root {
+  --gap: 1em;
+  --index: calc(1vw + 1vh);
+  --color-dark: #000;
+}
+
 body {
   font-family: 'Ubuntu', sans-serif;
+  overflow: hidden;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: calc(var(--index) * 1.8);
+  letter-spacing: 1.2px;
+  text-shadow: 2px 2px 2.5px #0000006c;
+  position: absolute;
+  opacity: .8;
 }
