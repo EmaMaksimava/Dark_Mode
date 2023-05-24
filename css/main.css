@@ -42,6 +42,14 @@ header {
   margin-bottom: var(--gap);
 }
 
+.created {
+  position: relative;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-shadow: 1px 1px 1.5px #0000006c;
+  opacity: 0;
+}
+
 
 .gallery {
   width: 30vw;
@@ -161,4 +169,20 @@ header {
 
 .loaded .lds-default {
   opacity: 0;
+}
+
+.loaded .created {
+  opacity: .8;
+}
+
+/* Dark Mode */
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: var(--color-dark);
+  }
+
+  .header, .created {
+    filter: invert(100%);
+  }
 }
