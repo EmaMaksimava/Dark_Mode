@@ -29,4 +29,12 @@ body {
   text-shadow: 2px 2px 2.5px #0000006c;
   position: absolute;
   opacity: .8;
+  text-align: center;
+}
+
+.header span {
+  display: block;
+  font-weight: 300;
+  font-size: calc(var(--index) * .7);
+  line-height: calc(var(--index) * 1.2);
 }
