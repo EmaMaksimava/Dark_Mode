@@ -7,7 +7,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;700&display=swap');
 
 :root {
-  --gap: 1em;
+  --gap: .5em;
   --index: calc(1vw + 1vh);
   --color-dark: #000;
 }
@@ -37,4 +37,30 @@ body {
   font-weight: 300;
   font-size: calc(var(--index) * .7);
   line-height: calc(var(--index) * 1.2);
+}
+
+.gallery {
+  width: 30vw;
+  column-width: 2em;
+  gap: var(--gap);
+  transform: scale(8);
+}
+
+.gallery__item {
+  margin-bottom: var(--gap);
+
+}
+
+.gallery__item img {
+  width: 100%;
+  display: block;
+  border-radius: 2px;
+  box-shadow: 1px 1px 5px #00000047;
+  transition: all .75s ease-in;
+  cursor: pointer;
+}
+
+.gallery__item img:hover {
+  filter: grayscale(8);
+  transform: scale(1.1);
 }
