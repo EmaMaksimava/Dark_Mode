@@ -44,11 +44,13 @@ body {
   column-width: 2em;
   gap: var(--gap);
   transform: scale(8);
+  will-change: transform;
+  transition: transform 1s cubic-bezier(.075, 1, .25, 1);
 }
 
 .gallery__item {
   margin-bottom: var(--gap);
-
+  transform: scale(1.001);
 }
 
 .gallery__item img {
@@ -58,6 +60,7 @@ body {
   box-shadow: 1px 1px 5px #00000047;
   transition: all .75s ease-in;
   cursor: pointer;
+  will-change: transform;
 }
 
 .gallery__item img:hover {
